@@ -38,5 +38,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: MNSL-Network-APK
-          pa
+          
 path: build//*.apk
