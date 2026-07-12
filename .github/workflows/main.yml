@@ -39,4 +39,4 @@ jobs:
         with:
           name: MNSL-Network-APK
           
-path: build//*.apk
+          path: build/**/*.apk
