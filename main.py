@@ -83,7 +83,7 @@ def generer_pdf_facture(num_facture, client):
     t_meta.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,0), colors.HexColor("#E0E0E0")),
         ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 6),
+        ('BOTTOMPADD9G', (0,0), (-1,-1), 6),
         ('GRID', (0,0), (-1,-1), 0.5, colors.gray),
         ('ALIGN', (0,0), (-1,-1), 'CENTER')
     ]))
@@ -293,4 +293,4 @@ def main(page: ft.Page):
         ft.Container(content=liste_logs, height=180, width=780, border_radius=8, bgcolor="#111111", padding=10)
     )
 
-ft.app(target=main)
+ft.app(target=main, assets_dir="assets")
